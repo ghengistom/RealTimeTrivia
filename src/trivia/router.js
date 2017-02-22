@@ -196,7 +196,7 @@ router.post('/signup', function(req, res) {
       //res.json({'object' : question, message: 'Question Created'});
     });
     res.contentType('application/json');
-    var data = JSON.stringify('http://localhost:9000/signin1.html');
+    var data = JSON.stringify('http://ec2-52-52-136-108.us-west-1.compute.amazonaws.com:9000/signin1.html');
     res.header('Content-Length', data.length);
     res.end(data);
 
