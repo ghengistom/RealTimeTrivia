@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # TriviaApplication
 Description
 
@@ -19,3 +20,6 @@ If redis and mongo servers are running, the application should be running on por
 Notes
 
 There is a 'seed.js' file configured to run at start-up. This script populates some trivia data into the mongodb database.
+=======
+# RealTimeTrivia
+>>>>>>> 2eedfb3c95a612e3df71e577ad9965f27a92ebec
