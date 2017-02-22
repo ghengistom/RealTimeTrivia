@@ -48,9 +48,7 @@ counts.right = 0;
 router.get('/home', function(req,res) {
   res.sendFile(path.resolve('public/home.html'));
 })
-router.get('/signin', function(req,res) {
-  res.sendFile(path.resolve('public/signin.html'));
-})
+
 
 router.get('/signin1', function(req,res) {
   res.sendFile(path.resolve('public/signin1.html'));
@@ -196,7 +194,7 @@ router.post('/signup', function(req, res) {
       //res.json({'object' : question, message: 'Question Created'});
     });
     res.contentType('application/json');
-    var data = JSON.stringify('http://ec2-52-52-136-108.us-west-1.compute.amazonaws.com:9000/trivia.html');
+    var data = JSON.stringify('http://ec2-52-52-136-108.us-west-1.compute.amazonaws.com:9000/signin1.html');
     res.header('Content-Length', data.length);
     res.end(data);
 
