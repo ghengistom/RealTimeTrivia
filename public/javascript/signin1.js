@@ -36,7 +36,7 @@ $("#signinbutton").on('click', function(){
         //  }
         //JSON.parse(data);
       //  console.log("This is from the server " + data.header);
-          window.location = "http://ec2-52-52-136-108.us-west-1.compute.amazonaws.com:9000/trivia.html";
+          window.location = data;
         },
         error: function(){
           alert("Either 1 of the 3 fields are incorrect or user doesn't exist in DB!");

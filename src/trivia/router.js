@@ -97,9 +97,9 @@ var object = {
         if (user){
             console.log("\n user found in DB \n");
             res.contentType('application/json');
-            //var data = JSON.stringify('http://ec2-52-52-136-108.us-west-1.compute.amazonaws.com:9000/trivia.html');
-          //  res.header('Content-Length', data.length);
-            //res.end(data);
+            var data = JSON.stringify('http://ec2-52-52-136-108.us-west-1.compute.amazonaws.com:9000/trivia.html');
+            res.header('Content-Length', data.length);
+            res.end(data);
         } else{
           console.log("\n\n User doens't exist \n\n");
         //res.send("The email address: " + email +" doesn't exist.");
