@@ -22,7 +22,7 @@ $("#signinbutton").on('click', function(){
 
     // send a POST request to our api to check if the user's answer is correct.
     $.ajax({
-      url: 'http://ec2-52-52-136-108.us-west-1.compute.amazonaws.com:9000/signin1',
+      url: 'http://localhost:9000/signin1',
       type: 'POST',
       data: JSON.stringify(object),
       contentType: "application/json; charset=utf-8",
@@ -47,6 +47,6 @@ $("#signinbutton").on('click', function(){
 
 
 $("#gosignup").on('click', function(){
-  window.location ="http://ec2-52-52-136-108.us-west-1.compute.amazonaws.com:9000";
+  window.location ="http://localhost:9000";
 
 });

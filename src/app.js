@@ -104,6 +104,7 @@ io.sockets.on('connection', function(client) {
 
     //if client says 'join', get their data broadcast it to all other sockets so that list of online user's will be updated.
     client.on('join_user', function(user) {
+      console.log("this is the user" + JSON.stringify(user));
         // emit new user to all
         io.emit('new_user_announcement', user);
     });
