@@ -24,8 +24,7 @@ $("#signupbutton").on('click', function(){
     //var sobject = JSON.stringify(object);
     // send a POST request to our api to check if the user's answer is correct.
     $.ajax({
-      url: 'http://ec2-52-52-136-108.us-west-1.compute.amazonaws.com
-:9000/signup',
+      url: 'http://ec2-52-52-136-108.us-west-1.compute.amazonaws.com:9000/signup',
       type: 'POST',
       data: JSON.stringify(object),
       contentType: "application/json; charset=utf-8",
@@ -43,7 +42,8 @@ $("#signupbutton").on('click', function(){
 
 /*
 function Redirect(){
-  window.location = "http://ec2-52-52-136-108.us-west-1.compute.amazonaws.com
+  window.location = "
+http://localhost
 :9000";
 
 }
@@ -56,7 +56,6 @@ function Redirect(){
 
 
 $("#gosignin").on('click', function(){
-  window.location ="http://ec2-52-52-136-108.us-west-1.compute.amazonaws.com
-:9000/signin1";
+  window.location ="http://ec2-52-52-136-108.us-west-1.compute.amazonaws.com:9000/signin1";
 
 });
